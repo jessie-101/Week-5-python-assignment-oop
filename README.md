@@ -10,14 +10,14 @@ class BankAccount:
 
     def deposit(self, amount):
         self.balance += amount
-        return f"Deposited {amount}. New balance: {self.balance} 💰"
+        return f"Deposited {amount}. New balance: {self.balance} "
 
     def withdraw(self, amount):
         if amount <= self.balance:
             self.balance -= amount
-            return f"Withdrew {amount}. New balance: {self.balance} 💵"
+            return f"Withdrew {amount}. New balance: {self.balance} "
         else:
-            return "Insufficient funds ❌"
+            return "Insufficient funds"
 
     def account_info(self):
         return f"Account {self.account_number}, Balance: {self.balance}"
@@ -55,17 +55,17 @@ class Profession:
 
 class Doctor(Profession):
     def work(self):
-        return "Treating patients 👨‍⚕️"
+        return "Treating patients "
 
 
 class Teacher(Profession):
     def work(self):
-        return "Teaching students 👩‍🏫"
+        return "Teaching students "
 
 
 class Engineer(Profession):
     def work(self):
-        return "Designing and building systems 👷"
+        return "Designing and building systems "
 
 
 # Polymorphism in action
